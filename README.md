@@ -1,6 +1,27 @@
 # A-Topological-Framework-for-Identifying-Structural-Breaks-in-Cross-Asset-Cryptocurrency-Network
 ![Figure 1](https://raw.githubusercontent.com/Janeyaoo/A-Topological-Framework-for-Identifying-Structural-Breaks-in-Cross-Asset-Cryptocurrency-N/main/Fig1.png)
-The cryptocurrency market is characterized by pronounced volatility and structural fragility, yet traditional risk indicators (such as price volatility and market indices) primarily capture changes at the price level and often fail to effectively detect deeper structural breaks in the market. To address this limitation, this study proposes a TDA–based framework for detecting structural state transitions by tracking the topological evolution of cross-asset similarity networks and identifying latent sources of structural risk. We compute Wasserstein distance and DTW distance for cryptocurrency time series within a sliding window strategy, construct Vietoris–Rips complexes on the resulting similarity networks, and extract topological features including Betti-0, Betti-1, and persistent entropy. These indicators are aligned with realized market events between 2020 and 2025, using data from the ten largest cryptocurrencies by market capitalization, and are systematically benchmarked through ROC–AUC analysis and multiple structural break detection procedures (PELT, BinSeg and CUSUM). Empirical results show that TDA-based indicators exhibit robust performance in event identification: topological connectivity features (Betti-0) achieve AUC values in the range of 0.632-0.650, significantly outperforming Fear\&Greed index, BTC volatility, S\&P 500, the VIX index. 
-Across all three structural break detection algorithms, topological indicators consistently achieve the highest F1-scores, outperforming both traditional market indicators and BTC volatility measures in identifying structural breaks.
-Overall, the findings indicate that topology-based measures of structural risk provide an important complementary perspective for structural break detection in cryptocurrency markets and has practical implications for portfolio risk management and systemic stability assessment.
+
+Overview
+
+The cryptocurrency market exhibits pronounced volatility and structural fragility. Traditional risk indicators—such as price volatility, market indices, and sentiment measures—mainly capture price-level fluctuations and often fail to reveal deeper structural breaks.
+
+This study introduces a topological data analysis (TDA) framework for detecting structural state transitions by tracking the evolving topology of cross-asset similarity networks and identifying latent sources of systemic instability.
+
+Methodology
+	•	Compute Wasserstein distance and Dynamic Time Warping (DTW) within a sliding-window scheme.
+	•	Construct Vietoris–Rips complexes on similarity networks.
+	•	Extract key topological features: Betti-0, Betti-1, and persistent entropy.
+	•	Align topological indicators with realized market events (2020-2025) using data from the ten largest cryptocurrencies by market capitalization.
+	•	Benchmark performance using ROC–AUC and three structural break detection methods: PELT, Binary Segmentation, and CUSUM.
+
+Key Findings
+	•	TDA-based indicators consistently outperform traditional market measures.
+Topological connectivity features (Betti-0) achieve AUC scores of 0.632–0.650, exceeding the performance of the
+Fear & Greed Index, BTC volatility, S&P 500, and VIX.
+	•	Across all three structural break detection procedures, TDA indicators achieve the highest F1-scores, surpassing both standard market indicators and BTC volatility in identifying structural transitions.
+
+Conclusion
+
+Topology-based measures provide a powerful and complementary perspective for detecting structural breaks in cryptocurrency markets.
+They capture system-level connectivity changes that conventional price-based indicators often miss, offering meaningful applications in portfolio risk management, crisis monitoring, and systemic stability assessment.
 
